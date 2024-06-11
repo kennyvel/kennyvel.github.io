@@ -63,7 +63,7 @@ plugins:
 
 author:
   name   : "Kenneth Velasquez"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/personal/bio-photo.jpg"
   bio    : ""
   links:
     - label: "LinkedIn"
