@@ -3,6 +3,16 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hello, I’m Kenny
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I’m a USC graduate currently residing in Calfornia, born and raised in Socal. Coding for games is how I grew to enjoy coding throughout college.
+
+In my free time, I mainly watch anime, read manga, go to the gym, and play video games with friends.
+
+Top 3 manga/anime:
+
+Land of the Lustrous, March Comes in like a Lion, Freiren: Beyond Journey’s End
+
+Games I currently grind:
+
+Destiny 2 and Apex Legends

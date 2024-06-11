@@ -4,4 +4,40 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 author_profile: true
+
+feature_row:
+  - image_path:
+    title: SDL/SDL2 Projects
+    url: /sdl
+    btn_label: "Read more"
+    btn_class: "btn--primary"
+
+feature_row2:
+  - image_path:
+    title: Unreal Project
+    url: /unreal
+    btn_label: "Read more"
+    btn_class: "btn--primary"
+
+feature_row3:
+  - image_path:
+    title: Unity Project
+    url: /unity
+    btn_label: "Read more"
+    btn_class: "btn--primary"
+
+feature_row4:
+  - image_path:
+    title: Engine Project
+    url: /engine
+    btn_label: "Read more"
+    btn_class: "btn--primary"
 ---
+
+{% include feature_row type="left" %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="feature_row3" type="left" %}
+
+{% include feature_row id="feature_row4" type="left" %}

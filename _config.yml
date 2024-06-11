@@ -59,6 +59,8 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# TODO add actual links and images in the code below
+
 author:
   name   : "Kenneth Velasquez"
   avatar : "/assets/images/bio-photo.jpg"
