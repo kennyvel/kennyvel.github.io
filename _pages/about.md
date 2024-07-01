@@ -5,14 +5,14 @@ title: "About"
 
 Hello, I’m Kenny
 
-I’m a USC graduate currently residing in Calfornia, born and raised in Socal. Coding for games is how I grew to enjoy coding throughout college.
+I’m a USC graduate currently residing in Calfornia, born and raised in SoCal. Learning to coding for games is how I grew to enjoy coding throughout college while getting beat down by boring major classes.
 
-In my free time, I mainly watch anime, read manga, go to the gym, and play video games with friends.
+In my free time, I mainly watch anime, read manga, go to the gym, and play video games with friends. 
 
 Top 3 manga/anime:
 
 Land of the Lustrous, March Comes in like a Lion, Freiren: Beyond Journey’s End
 
-Games I currently grind:
+Game(s) I currently grind:
 
-Destiny 2 and Apex Legends
+Apex Legends and Valorant
