@@ -23,5 +23,5 @@ Engine subsystems include:
 
 Multithreading was also incorporated together with a job manager to take care of tasks in the engine after profiling big offenders.
 
-For rendering, HLSL was used to create the shaders for the engine such as phong, half lambert, lambert, and bloom mask shaders to name a few. A Z-buffer was utilized to reduce overdrawing and was tweaked to support drawing transparent objects. 
+For rendering, HLSL was used to create the shaders for the engine such as phong, half lambert, lambert, and bloom mask shaders to name a few. A Z-buffer was utilized to reduce overdrawing and was tweaked to support drawing transparent objects.
 

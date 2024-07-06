@@ -17,7 +17,7 @@ The games done as part of the class include Pong, Asteroids, Frogger, Mario, Pac
 
 Throughout the labs, we focused on using a component model for things like movement and sprites while also having the ability to override functions if need be in our game object class, Actor
 
-Here is a short video that shows the assignments done in class, with the exception of Portal being a recent replacement to Runner's Edge:
+Here is a short video that shows clips of the assignments done in class, with the exception of Portal being a recent replacement to Runner's Edge:
 
 <video width="480" height="320" controls="controls">
   <source src="/assets/videos/HypeTrailer5.mp4" type="video/mp4">
