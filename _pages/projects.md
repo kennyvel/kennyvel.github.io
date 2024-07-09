@@ -40,7 +40,9 @@ Some features that I had to implement include:
 
 While networking was kind of a pain to learn, debug, and implement at first, this is probably my favorite project/assignment to have worked on. It felt very rewarding to see things change in the game across multiple screens and player perspectives like it would for any online game I've grown up playing. 
 
-Below is a playlist containing videos that showcase the work that I submitted for grading in the class. 
+Below is a playlist containing videos that showcase the work that I submitted for grading in the class.
+
+<iframe width="640" height="360" src="s://www.youtube.com/watch?v=YCeWgQgYC1M&list=PLDD2sdi07jIb327wSvRmiTeNjgWqU_rGL?controls=0" frameborder="0" allowfullscreen></iframe>
 
 ## DirectX11 API Game Engine
 
