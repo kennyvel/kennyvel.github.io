@@ -42,7 +42,7 @@ While networking was kind of a pain to learn, debug, and implement at first, thi
 
 Below is a playlist containing videos that showcase the work that I submitted for grading in the class.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/YCeWgQgYC1M&list=PLDD2sdi07jIb327wSvRmiTeNjgWqU_rGL" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YCeWgQgYC1M?si=xywo3HXqQLdqAw6x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## DirectX11 API Game Engine
 
