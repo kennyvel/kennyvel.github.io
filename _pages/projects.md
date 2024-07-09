@@ -5,6 +5,16 @@ toc: true
 toc_sticky: true
 author_profile: false
 
+gallery:
+  - url: /assets/images/midterm-shaders.png
+    image_path: /assets/images/midterm-shaders.png
+    alt: "Lambert, Specular, Half Lambert Shader"
+    title: "Lambert, Specular, Half Lambert"
+  - url: /assets/images/toonshader.gif
+    image_path: /assets/images/toonshader.gif
+    alt: "Toon Shader"
+    title: "Toon"
+
 ---
 
 ## Tiled Heroes
@@ -54,11 +64,15 @@ Engine subsystems include:
 - Collisions
 - Physics
 - Game world models
-- Animation.
+- Animation
 
 Multithreading was also incorporated together with a job manager to take care of tasks, largely rendering and animation tasks, in the engine after profiling big offenders.
 
 For rendering, HLSL was used to create the shaders for the engine such as phong, half lambert, lambert, and bloom mask shaders to name a few. A Z-buffer was utilized to reduce overdrawing and was tweaked to support drawing transparent objects.
+
+{% include gally caption="Toon, lambert, specular, and half lambert shaders respectively." %}
+
+
 
 ## ITP 380
 
