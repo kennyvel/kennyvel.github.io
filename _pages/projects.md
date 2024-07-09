@@ -6,14 +6,14 @@ toc_sticky: true
 author_profile: false
 
 gallery:
-  - url: /assets/images/midterm-shaders.png
-    image_path: /assets/images/midterm-shaders.png
-    alt: "Lambert, Specular, Half Lambert Shader"
-    title: "Lambert, Specular, Half Lambert"
   - url: /assets/images/toonshader.png
     image_path: /assets/images/toonshader.png
     alt: "Toon Shader"
     title: "Toon"
+  - url: /assets/images/midterm-shaders.png
+    image_path: /assets/images/midterm-shaders.png
+    alt: "Lambert, Specular, Half Lambert Shader"
+    title: "Lambert, Specular, Half Lambert"
 
 ---
 
@@ -73,7 +73,7 @@ Multithreading was also incorporated together with a job manager to take care of
 
 For rendering, HLSL was used to create the shaders for the engine such as phong, half lambert, lambert, and bloom mask shaders to name a few. A Z-buffer was utilized to reduce overdrawing and was tweaked to support drawing transparent objects.
 
-{% include gallery caption="Toon, lambert, specular, and half lambert shaders respectively." %}
+{% include gallery caption="Toon, lambert, specular, and half lambert shaders respectively." %}{: align-center}
 
 
 ## ITP 380
