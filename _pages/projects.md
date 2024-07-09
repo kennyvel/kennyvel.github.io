@@ -68,6 +68,8 @@ Throughout the labs, we focused on using a component model for things like movem
 
 Here is a short video that shows clips of the assignments done in class, with the exception of Portal being a recent replacement to Runner's Edge:
 
-<video width="480" height="320" controls="controls">
-  <source src="/assets/videos/HypeTrailer5.mp4" type="video/mp4">
-</video>
+<figure class="align-center">
+    <video width="480" height="320" controls="controls" class="center">
+        <source src="/assets/videos/HypeTrailer5.mp4" type="video/mp4">
+    </video>
+</figure>
