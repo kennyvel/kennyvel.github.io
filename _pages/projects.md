@@ -76,7 +76,7 @@ For rendering, HLSL was used to create the shaders for the engine such as phong,
 {% include gallery %}
 
 
-<video width="900" height="500" controls="controls">
+<video width="875" height="500" controls="controls">
   <source src="/assets/videos/gameengine.mp4" type="video/mp4">
 </video>
 
