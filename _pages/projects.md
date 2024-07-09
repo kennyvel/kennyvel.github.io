@@ -76,6 +76,11 @@ For rendering, HLSL was used to create the shaders for the engine such as phong,
 {% include gallery %}
 
 
+<video width="900" height="500" controls="controls">
+  <source src="/assets/videos/gameengine.mp4" type="video/mp4">
+</video>
+
+
 ## ITP 380
 
 Multiple games made using SDL/SDL2 with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously.  
