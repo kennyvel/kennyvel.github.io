@@ -10,12 +10,13 @@ gallery:
     image_path: /assets/images/midterm-shaders.png
     alt: "Lambert, Specular, Half Lambert Shader"
     title: "Lambert, Specular, Half Lambert"
-  - url: /assets/images/toonshader.gif
-    image_path: /assets/images/toonshader.gif
+  - url: /assets/images/toonshader.png
+    image_path: /assets/images/toonshader.png
     alt: "Toon Shader"
     title: "Toon"
 
 ---
+
 
 ## Tiled Heroes
 
@@ -32,6 +33,7 @@ For this game, I implemented:
 - Input for mobile devices and PC
 
 The more I've coded for games throughout college, the more I wish I was at least decent at creating art, as making my own sprites for the units completely from scratch would have been really cool. Definitely something to learn for the future!
+
 
 ## ITP 438
 
@@ -54,6 +56,7 @@ Below is a playlist containing videos that showcase the work that I submitted fo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ogxw2Rw29LC901ND&amp;list=PLDD2sdi07jIb327wSvRmiTeNjgWqU_rGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 ## DirectX11 API Game Engine
 
 Worked with DirectX11 to build multiple features in a simplified game engine. 
@@ -73,7 +76,6 @@ For rendering, HLSL was used to create the shaders for the engine such as phong,
 {% include gallery caption="Toon, lambert, specular, and half lambert shaders respectively." %}
 
 
-
 ## ITP 380
 
 Multiple games made using SDL/SDL2 with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously.  
@@ -83,6 +85,8 @@ The games done as part of the class include Pong, Asteroids, Frogger, Mario, Pac
 Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor
 
 Here is a short video that shows clips of the assignments done in class, with the exception of Portal being a recent replacement to Runner's Edge:
+
+
 
 <video width="900" height="500" controls="controls">
   <source src="/assets/videos/HypeTrailer5.mp4" type="video/mp4">
