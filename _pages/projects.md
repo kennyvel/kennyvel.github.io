@@ -20,7 +20,7 @@ gallery:
 
 ## Tiled Heroes
 
-Tiled Heroes is a strategy game playable on PC and mobile devices. The player has to use the few units provided to them to eliminate every enemy in the level, for a few levels. 
+Tiled Heroes is a strategy game playable on PC and mobile devices, created in Unity. The player has to use the few units provided to them to eliminate every enemy in the level, for a few levels. 
 
 This was a project that I worked on as the final project for a mobile games class in college. Unlike all the other assignments in the class before this one, I had both complete control over what I wanted to create, and no guidance besides a list of criteria for grading.
 
