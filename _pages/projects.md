@@ -32,6 +32,10 @@ For this game, I implemented:
 - Simplified enemy unit turns
 - Input for mobile devices and PC
 
+<video width="900" height="500" controls="controls">
+  <source src="/assets/videos/tiledheroes.mp4" type="video/mp4">
+</video>
+
 The more I've coded for games throughout college, the more I wish I was at least decent at creating art, as making my own sprites for the units completely from scratch would have been really cool. Definitely something to learn for the future!
 
 
