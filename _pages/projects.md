@@ -22,7 +22,7 @@ gallery:
 
 Tiled Heroes is a strategy game playable on PC and mobile devices, created in Unity. The player has to use the few units provided to them to eliminate every enemy in the level, for a few levels. 
 
-This was a project that I worked on as the final project for a mobile games class in college. Unlike all the other assignments in the class before this one, I had both complete control over what I wanted to create, and no guidance besides a list of criteria for grading.
+This was a project that I worked on as the final project for a mobile games class in college. Unlike all the other assignments in the class before this one, I had both complete control over what I wanted to create, and no guidance besides a list of criteria for grading. The previous assignments in class gave me a foundation for coding in C#, creating scripts, asset management, and other Unity basics.
 
 For this game, I implemented:
 - Levels with different tile maps using Tiled
@@ -41,9 +41,10 @@ The more I've coded for games throughout college, the more I wish I was at least
 
 ## ITP 438
 
-The first half of the class covered some basics for Unreal Engine 4. During the second half of the semester, I had to create a multiplayer first person shooter game made in Unreal Engine 4 by building off of weekly deliverables.
+The first half of the class covered some basics for Unreal Engine 4. During the second half of the semester, I had to create a multiplayer first person shooter game made in Unreal Engine 4 by building off of weekly deliverables. The class made use of Perforce servers for version control.
 
 Some features that I had to implement include:
+- Player controls and movement
 - Default and grenade launcher firing modes
 - Sprays/decals
 - Ammo pickups
@@ -51,17 +52,19 @@ Some features that I had to implement include:
 - Game chat (Team and All)
 - Death animations
 - Respawning
+- Saving game states
 - Steam integration using Spacewar
 - Ready check for starting the game
 
-While networking was kind of a pain to learn, debug, and implement at first, this is probably my favorite project/assignment to have worked on. It felt very rewarding to see things change in the game across multiple screens and player perspectives like it would for any online game I've grown up playing. 
 
-Below is a playlist containing videos that showcase the work that I submitted for grading in the class.
+While networking was kind of a pain to learn, debug, and implement at first, this is probably my favorite project/assignment to have worked on. It felt very rewarding to see things change in the game across multiple screens and player perspectives like it would for any online game I've grown up playing. It was also very cool to be able to connect and test the game with friends that had Steam accounts and a copy of the package!
+
+Below is a playlist containing videos that showcase the work that I submitted for grading in the class. The playlist covers everything from firing the weapon to 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ogxw2Rw29LC901ND&amp;list=PLDD2sdi07jIb327wSvRmiTeNjgWqU_rGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## DirectX11 API Game Engine
+## ITP 485: DirectX11 API Game Engine
 
 Worked with DirectX11 to build multiple features in a simplified game engine. 
 
