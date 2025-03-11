@@ -1,5 +1,5 @@
 ---
-permalink: /game-projects/
+permalink: /projects/
 title: "Game Projects"
 toc: true
 toc_sticky: true
@@ -18,6 +18,8 @@ gallery:
 ---
 
 Feel free to contact me about viewing code!
+<!-- 
+TODO: Change videos into shorter gifs -->
 
 ## Tiled Heroes
 
@@ -96,6 +98,8 @@ Throughout the labs, we focused on using a component model for things like movem
 
 Here is a short video that shows clips of the assignments done in class, with the exception of Portal being a recent replacement to Runner's Edge:
 
+<!-- TODO: Replace this video with a gallery of gifs of the games -->
 <video width="875" height="500" controls="controls">
   <source src="/assets/videos/HypeTrailer5.mp4" type="video/mp4">
 </video>
+
