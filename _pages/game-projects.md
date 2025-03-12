@@ -59,7 +59,7 @@ Some features that I had to implement include:
 
 While networking was kind of a pain to learn, debug, and implement at first, this is probably my favorite project/assignment to have worked on. It felt very rewarding to see things change in the game across multiple screens and player perspectives like it would for any online game I've grown up playing. It was also very cool to be able to connect and test the game with friends that had Steam accounts and a copy of the package!
 
-Below is a playlist containing videos that showcase the work that I submitted for grading in the class. The playlist covers everything from firing the weapon to 
+Below is a playlist containing videos that showcase the work that I submitted for grading in the class.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ogxw2Rw29LC901ND&amp;list=PLDD2sdi07jIb327wSvRmiTeNjgWqU_rGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
