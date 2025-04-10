@@ -90,7 +90,7 @@ For rendering, HLSL was used to create the shaders for the engine such as phong,
 
 ## ITP 380
 
-Multiple games made using SDL/SDL2 with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously.  
+Multiple games made using SDL and C++ with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously.  
 
 The games done as part of the class include Pong, Asteroids, Frogger, Mario, Pac-Man, Zelda, Star Fox Tunnel, Mario Kart, and Runner’s Edge (a first person 3D platformer). Another game, Robotron 2084, was also recreated and simplified using the same code base built up from this class for the final exam of another class (ITP 481) later in the future. Taking ITP 380 was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications.
 
