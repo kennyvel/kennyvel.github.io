@@ -67,12 +67,13 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/kenneth-velasquez-582324257/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/itbe_kenny"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kennyvel"
+    - label: "Email (kennyvel805@gmail.com)"
+      icon: "fa-solid fa-envelope"
+      url: "mailto:kennyvel805@gmail.com"
+
 
 footer:
   links:
@@ -82,9 +83,16 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/itbe_kenny"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/kennyvel"
+    - label: "Email"
+      icon: "fa-solid fa-envelope"
+      url: "kennyvel805@gmail.com"
+
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+    
 
 defaults:
   # _posts
@@ -105,6 +113,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+    # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: false
 
 category_archive:
   type: liquid
