@@ -21,6 +21,8 @@ gallery:
     title: "Game Engine"
 ---
 
+Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing said code, feel free to reach out! 
+
 Worked with DirectX11 to build a custom game engine. 
 
 Includes:
