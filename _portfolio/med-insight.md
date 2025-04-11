@@ -25,6 +25,6 @@ The features of the project include:
 - A MongoDB database for storing a user's test results
 - Endpoints for interacting with the database
 
-I personally edited endpoints and the graph component to make sure the graph would properly display the five latest results for each individual type of test. I also helped with the user authentication and adding them to the database, with the user's ID being their unique Google OAuth token. At the end, I documented the endpoints, scraper, and database for future development.
+I personally edited endpoints and the graph component to make sure the graph would properly display the five latest results and the threshold values for each individual type of test. I also helped with the user authentication and adding them to the database, with the user's ID being their unique Google OAuth token. At the end, I documented the endpoints, scraper, and database for future development.
 
 {% include gallery %}
