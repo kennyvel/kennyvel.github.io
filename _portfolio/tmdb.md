@@ -6,7 +6,12 @@ header:
     overlay_filter: "0.5"
     overlay_image: /assets/images/tmdb-teaser.png
     teaser: /assets/images/tmdb-teaser.png
-    
+    actions:
+    - label: "<i class='fab fa-github'></i> GitHub Repo"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kennyvel/tmdb-page"
+    - label: Website
+      url: "https://kennyvel.github.io/tmdb-page/"
 gallery:
   - url: assets/images/tmdb.gif
     image_path: assets/images/tmdb.gif
