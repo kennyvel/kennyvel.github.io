@@ -6,6 +6,10 @@ header:
     overlay_filter: "0.5"
     overlay_image: /assets/images/tiledheroes.png
     teaser: /assets/images/tiled-heroes-teaser.png
+    actions:
+    - label: "<i class='fab fa-github'></i> GitHub Repo"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kennyvel/tiled-heroes"
 gallery:
   - url: /assets/images/level1.gif
     image_path: /assets/images/level1.gif
