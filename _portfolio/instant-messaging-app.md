@@ -15,6 +15,7 @@ header:
 This project was done together with 3 other people to learn more about how instant messaging works for applications like Discord. When working on this app we followed an agile framework, with 3 sprints lasting one month each with in-person scrum poker, sprint reviews, and professor feedback sessions. 
 
 For this project, we made:
+- Account registration and login.
 - Early UI/UX mockups using Figma.
 - Real-time updates for messaging and online statuses with SignalR.
 - Notification badges from SignalR events
