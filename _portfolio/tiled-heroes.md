@@ -1,6 +1,7 @@
 ---
 title: "Tiled Heroes"
 excerpt: "Turn-based strategy game made in Unity"
+order: 2
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

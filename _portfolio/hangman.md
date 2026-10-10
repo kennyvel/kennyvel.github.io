@@ -1,6 +1,7 @@
 ---
 title: "Hangman"
 excerpt: "Hangman-style game made with React"
+order: 8
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

@@ -1,6 +1,7 @@
 ---
 title: "SDL Games"
 excerpt: "Multiple remakes of games in SDL for the class, ITP 380"
+order: 5
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

@@ -1,6 +1,7 @@
 ---
 title: "Multiplayer FPS"
 excerpt: "Multiplayer FPS made in Unreal Engine"
+order: 3
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

@@ -1,6 +1,7 @@
 ---
 title: "MedInsight"
 excerpt: "Portal for storing and viewing lab tests"
+order: 7
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

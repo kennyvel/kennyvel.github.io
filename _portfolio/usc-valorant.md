@@ -1,6 +1,7 @@
 ---
 title: "USC Valorant Match Archiver"
 excerpt: "Website for interacting with a collegiate Valorant match database"
+order: 6
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

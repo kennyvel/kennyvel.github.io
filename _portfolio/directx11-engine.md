@@ -1,6 +1,7 @@
 ---
 title: "DirectX11 Game Engine"
 excerpt: "Game engine made with the DirectX11 API"
+order: 4
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"

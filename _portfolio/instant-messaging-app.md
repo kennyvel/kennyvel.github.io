@@ -1,6 +1,7 @@
 ---
 title: "Instant Messaging App"
 excerpt: "Messaging App inspired by Discord"
+order: 1
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"
