@@ -19,11 +19,21 @@ gallery:
     alt: "PacMan"
 ---
 
-Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing said code, feel free to reach out! 
+Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing the repository, feel free to reach out! 
 
-Multiple games made using SDL and C++ with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously. The games done as part of the class include Pong, Asteroids, Frogger, Mario, Pac-Man, Zelda, Star Fox Tunnel, Mario Kart, and Runner’s Edge (a first person 3D platformer). Another game, Robotron 2084, was also recreated and simplified using the same code base built up from this class for the final exam of another class (ITP 481) later in the future. Taking ITP 380 was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications.
+Multiple games made using SDL and C++ with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously. The games adapted as part of the class include: 
+- Pong
+- Asteroids
+- Frogger
+- Mario
+- Pac-Man
+- Zelda
+- Star Fox Tunnel
+- Mario Kart
+- Runner’s Edge (a first person 3D platformer) 
+- Robotron 2084
 
-Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor. 
+Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor. 
 
 {% include gallery %}
 
