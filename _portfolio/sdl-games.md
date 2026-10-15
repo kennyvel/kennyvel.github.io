@@ -30,7 +30,7 @@ Multiple games made using SDL and C++ with starter code provided for some from c
 - Zelda
 - Star Fox Tunnel
 - Mario Kart
-- Runner’s Edge (a first person 3D platformer) 
+- Parkours’s Edge (a first person 3D platformer) 
 - Robotron 2084
 
 Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor.
@@ -38,7 +38,7 @@ Taking ITP 380 at USC was my first exposure to programming for video games and h
 Below are some examples of code snippets I personally enjoyed coding the most:
 
 ### PacMan Ghost Chase Behavior
-The isolated logic for each ghost's chase state behaviors:
+The isolated logic and video for the ghosts' chase state behaviors:
 
 ```cpp
 void GhostAI::UpdateChaseTarget()
@@ -128,8 +128,10 @@ PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
 ```
 {: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
-### Runner's Edge Wall Running Logic
-The code responsible for switching to and updating the Wall Run state:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2kjYD2qDpVU?si=N89UqInP6cxTf5G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### Parkour's Edge Wall Running Logic
+The code and a video for switching to and updating the Wall Run state:
 
 ```cpp
 void PlayerMove::Update(float deltaTime) {
@@ -258,6 +260,6 @@ Vector3 PlayerMove::NormalConstruct(CollSide side) {
 ```
 {: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wa_cFeEA6aE?si=eXi4OACC51kl8aMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 {% include gallery %}
-
-
