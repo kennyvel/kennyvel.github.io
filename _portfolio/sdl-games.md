@@ -1,7 +1,7 @@
 ---
 title: "SDL Games"
 excerpt: "Multiple remakes of games in SDL for the class, ITP 380"
-order: 5
+order: 3
 header:
     overlay_color: "#000"
     overlay_filter: "0.5"
@@ -33,7 +33,15 @@ Multiple games made using SDL and C++ with starter code provided for some from c
 - Runner’s Edge (a first person 3D platformer) 
 - Robotron 2084
 
-Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor. 
+Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor.
+
+Below are some examples of code snippets I personally enjoyed coding:
+
+### 📐 PacMan Ghost Chase Behavior
+The isolated logic for each ghost's chase state behaviors:
+<div style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
+  <script src="https://gist.github.com/kennyvel/5aa41fabb82e3b618cb68bf169da5cc8.js"></script>
+</div>
 
 {% include gallery %}
 
