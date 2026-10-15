@@ -40,7 +40,92 @@ Below are some examples of code snippets I personally enjoyed coding:
 ### PacMan Ghost Chase Behavior
 The isolated logic for each ghost's chase state behaviors:
 <div style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
-  <script src="https://gist.github.com/kennyvel/5aa41fabb82e3b618cb68bf169da5cc8.js"></script>
+  ```cpp
+  void GhostAI::UpdateChaseTarget()
+  {
+    switch (mGhost->GetType())
+    {
+    case Ghost::Blinky:
+      BlinkyChase();
+      break;
+    case Ghost::Pinky:
+      PinkyChase();
+      break;
+    case Ghost::Inky:
+      InkyChase();
+      break;
+    case Ghost::Clyde:
+      ClydeChase();
+      break;
+    }
+  }
+
+  void GhostAI::BlinkyChase()
+  {
+    // Blinky aggressively chases PacMan, targeting his previous node.
+    PathNode* prevNode = gGame.GetPlayer()->GetPrevNode();
+    if (prevNode->GetType() != PathNode::Tunnel)
+    {
+      mTargetNode = prevNode;
+      return;
+    }
+    // Targets the node closest to PacMan when the previous node is a tunnel
+    const Vector2& pacmanPosition = gGame.GetPlayer()->GetTransform().GetPosition();
+    mTargetNode = GetClosestDefaultNode(pacmanPosition);
+  }
+
+  void GhostAI::PinkyChase()
+  {
+    // Pinky tries to cut off PacMan, targeting the node 80 units in front of him.
+    Vector2 targetPosition = gGame.GetPlayer()->GetPointInFrontOf(80.0f);
+    mTargetNode = GetClosestDefaultNode(targetPosition);
+  }
+
+  void GhostAI::InkyChase()
+  {
+    // Inky tries to be parallel and ahead of Blinky in order to pincer PacMan
+    auto& ghosts = gGame.GetGhosts();
+    // Doubles the vector from Blinky to a point 40 units in front of PacMan
+    // to get Inky's target node
+    Vector2 pointP = gGame.GetPlayer()->GetPointInFrontOf(40.0f);
+    Vector2 v = pointP - ghosts[0]->GetTransform().GetPosition();
+    Vector2 q = v * 2.0f + ghosts[0]->GetTransform().GetPosition();
+    mTargetNode = GetClosestDefaultNode(q);
+  }
+
+  void GhostAI::ClydeChase()
+  {
+    // Clyde copies Blinky's behavior when far away from PacMan (>150 units)
+    float distanceToPacMan = Vector2::Distance(gGame.GetPlayer()->GetTransform().GetPosition(),
+                          mGhost->GetTransform().GetPosition());
+    if (distanceToPacMan > CLYDE_AGGRO_DISTANCE)
+    {
+      BlinkyChase();
+      return;
+    }
+    mTargetNode = mGhost->GetScatterNode();
+  }
+
+  PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
+  {
+    std::vector<PathNode*>& allNodes = gGame.GetPathNodes();
+    PathNode* closestNode = nullptr;
+    float minDistance = std::numeric_limits<float>::max();
+    for (PathNode* node : allNodes)
+    {
+      if (node->GetType() == PathNode::Default)
+      {
+        float dist = Vector2::Distance(node->GetTransform().GetPosition(), position);
+        if (dist < minDistance)
+        {
+          minDistance = dist;
+          closestNode = node;
+        }
+      }
+    }
+    return closestNode;
+  }
+  ```
 </div>
 
 {% include gallery %}
