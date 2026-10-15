@@ -37,6 +37,11 @@ Taking ITP 380 at USC was my first exposure to programming for video games and h
 
 Below are some examples of code snippets I personally enjoyed coding:
 
+<style>
+  /* Automatically pulls the complete dark syntax rules from a public repository */
+  @import url('https://jsdelivr.net');
+</style>
+
 ### 📐 PacMan Ghost Chase Behavior
 The isolated logic for each ghost's chase state behaviors:
 <div style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
