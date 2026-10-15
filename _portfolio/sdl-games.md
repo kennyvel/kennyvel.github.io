@@ -128,6 +128,8 @@ PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
 }
 ```
 
+</div>
+
 ### Runner's Edge Wall Running Logic
 The code for switching to and updating the Wall Run state:
 <div markdown="1" style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
