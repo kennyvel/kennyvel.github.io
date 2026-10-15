@@ -39,7 +39,7 @@ Below are some examples of code snippets I personally enjoyed coding:
 
 ### PacMan Ghost Chase Behavior
 The isolated logic for each ghost's chase state behaviors:
-<div style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
+<div markdown="1" style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
 
 ```cpp
 void GhostAI::UpdateChaseTarget()
