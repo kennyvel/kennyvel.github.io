@@ -39,7 +39,6 @@ Below are some examples of code snippets I personally enjoyed coding:
 
 ### PacMan Ghost Chase Behavior
 The isolated logic for each ghost's chase state behaviors:
-<div markdown="1" style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
 
 ```cpp
 void GhostAI::UpdateChaseTarget()
@@ -127,12 +126,10 @@ PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
 	return closestNode;
 }
 ```
-
-</div>
+{: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
 ### Runner's Edge Wall Running Logic
 The code for switching to and updating the Wall Run state:
-<div markdown="1" style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
 
 ```cpp
 void PlayerMove::Update(float deltaTime) {
@@ -259,8 +256,7 @@ Vector3 PlayerMove::NormalConstruct(CollSide side) {
     return Vector3::Zero;
 }
 ```
-
-</div>
+{: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
 {% include gallery %}
 
