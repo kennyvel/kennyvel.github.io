@@ -44,87 +44,217 @@ The isolated logic for each ghost's chase state behaviors:
 ```cpp
 void GhostAI::UpdateChaseTarget()
 {
-  switch (mGhost->GetType())
-  {
-  case Ghost::Blinky:
-    BlinkyChase();
-    break;
-  case Ghost::Pinky:
-    PinkyChase();
-    break;
-  case Ghost::Inky:
-    InkyChase();
-    break;
-  case Ghost::Clyde:
-    ClydeChase();
-    break;
-  }
+	switch (mGhost->GetType())
+	{
+	case Ghost::Blinky:
+		BlinkyChase();
+		break;
+	case Ghost::Pinky:
+		PinkyChase();
+		break;
+	case Ghost::Inky:
+		InkyChase();
+		break;
+	case Ghost::Clyde:
+		ClydeChase();
+		break;
+	}
 }
 
 void GhostAI::BlinkyChase()
 {
-  // Blinky aggressively chases PacMan, targeting his previous node.
-  PathNode* prevNode = gGame.GetPlayer()->GetPrevNode();
-  if (prevNode->GetType() != PathNode::Tunnel)
-  {
-    mTargetNode = prevNode;
-    return;
-  }
-  // Targets the node closest to PacMan when the previous node is a tunnel
-  const Vector2& pacmanPosition = gGame.GetPlayer()->GetTransform().GetPosition();
-  mTargetNode = GetClosestDefaultNode(pacmanPosition);
+	// Blinky aggressively chases PacMan, targeting his previous node.
+	PathNode* prevNode = gGame.GetPlayer()->GetPrevNode();
+	if (prevNode->GetType() != PathNode::Tunnel)
+	{
+		mTargetNode = prevNode;
+		return;
+	}
+	// Targets the node closest to PacMan when the previous node is a tunnel
+	const Vector2& pacmanPosition = gGame.GetPlayer()->GetTransform().GetPosition();
+	mTargetNode = GetClosestDefaultNode(pacmanPosition);
 }
 
 void GhostAI::PinkyChase()
 {
-  // Pinky tries to cut off PacMan, targeting the node 80 units in front of him.
-  Vector2 targetPosition = gGame.GetPlayer()->GetPointInFrontOf(80.0f);
-  mTargetNode = GetClosestDefaultNode(targetPosition);
+	// Pinky tries to cut off PacMan, targeting the node 80 units in front of him.
+	Vector2 targetPosition = gGame.GetPlayer()->GetPointInFrontOf(80.0f);
+	mTargetNode = GetClosestDefaultNode(targetPosition);
 }
 
 void GhostAI::InkyChase()
 {
-  // Inky tries to be parallel and ahead of Blinky in order to pincer PacMan
-  auto& ghosts = gGame.GetGhosts();
-  // Doubles the vector from Blinky to a point 40 units in front of PacMan
-  // to get Inky's target node
-  Vector2 pointP = gGame.GetPlayer()->GetPointInFrontOf(40.0f);
-  Vector2 v = pointP - ghosts[0]->GetTransform().GetPosition();
-  Vector2 q = v * 2.0f + ghosts[0]->GetTransform().GetPosition();
-  mTargetNode = GetClosestDefaultNode(q);
+	// Inky tries to be parallel and ahead of Blinky in order to pincer PacMan
+	auto& ghosts = gGame.GetGhosts();
+	// Doubles the vector from Blinky to a point 40 units in front of PacMan
+	// to get Inky's target node
+	Vector2 pointP = gGame.GetPlayer()->GetPointInFrontOf(40.0f);
+	Vector2 v = pointP - ghosts[0]->GetTransform().GetPosition();
+	Vector2 q = v * 2.0f + ghosts[0]->GetTransform().GetPosition();
+	mTargetNode = GetClosestDefaultNode(q);
 }
 
 void GhostAI::ClydeChase()
 {
-  // Clyde copies Blinky's behavior when far away from PacMan (>150 units)
-  float distanceToPacMan = Vector2::Distance(gGame.GetPlayer()->GetTransform().GetPosition(),
-                        mGhost->GetTransform().GetPosition());
-  if (distanceToPacMan > CLYDE_AGGRO_DISTANCE)
-  {
-    BlinkyChase();
-    return;
-  }
-  mTargetNode = mGhost->GetScatterNode();
+	// Clyde copies Blinky's behavior when far away from PacMan (>150 units)
+	float distanceToPacMan = Vector2::Distance(gGame.GetPlayer()->GetTransform().GetPosition(),
+											   mGhost->GetTransform().GetPosition());
+	if (distanceToPacMan > CLYDE_AGGRO_DISTANCE)
+	{
+		BlinkyChase();
+		return;
+	}
+	mTargetNode = mGhost->GetScatterNode();
 }
 
 PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
 {
-  std::vector<PathNode*>& allNodes = gGame.GetPathNodes();
-  PathNode* closestNode = nullptr;
-  float minDistance = std::numeric_limits<float>::max();
-  for (PathNode* node : allNodes)
-  {
-    if (node->GetType() == PathNode::Default)
-    {
-      float dist = Vector2::Distance(node->GetTransform().GetPosition(), position);
-      if (dist < minDistance)
-      {
-        minDistance = dist;
-        closestNode = node;
-      }
+	std::vector<PathNode*>& allNodes = gGame.GetPathNodes();
+	PathNode* closestNode = nullptr;
+	float minDistance = std::numeric_limits<float>::max();
+	for (PathNode* node : allNodes)
+	{
+		if (node->GetType() == PathNode::Default)
+		{
+			float dist = Vector2::Distance(node->GetTransform().GetPosition(), position);
+			if (dist < minDistance)
+			{
+				minDistance = dist;
+				closestNode = node;
+			}
+		}
+	}
+	return closestNode;
+}
+```
+
+### Runner's Edge Wall Running Logic
+The code for switching to and updating the Wall Run state:
+<div markdown="1" style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;">
+
+```cpp
+void PlayerMove::Update(float deltaTime) {
+    if(mOwner->GetPosition().z < LOWER_WORLD_BOUND) {
+        KillPlayer();
     }
-  }
-  return closestNode;
+    if(mCurrentState == OnGround) {
+        UpdateOnGround(deltaTime);
+        if(mVelocity.Length() > RUN_FOOTSTEP_VELOCITY) {
+            Mix_Resume(mRunningSoundChannel);
+        }
+        else {
+            Mix_Pause(mRunningSoundChannel);
+        }
+    }
+    else if(mCurrentState == Jump) {
+        UpdateJump(deltaTime);
+        Mix_Pause(mRunningSoundChannel);
+    }
+    else if(mCurrentState == Falling){
+        UpdateFalling(deltaTime);
+        Mix_Pause(mRunningSoundChannel);
+    }
+    else if(mCurrentState == WallClimb) {
+        UpdateWallClimb(deltaTime);
+        Mix_Resume(mRunningSoundChannel);
+    }
+    else if(mCurrentState == WallRun) {
+        UpdateWallRun(deltaTime);
+        Mix_Resume(mRunningSoundChannel);
+    }
+}
+
+void PlayerMove::UpdateJump(float deltaTime) {
+    AddForce(mGravity);
+    PhysicsUpdate(deltaTime);
+    
+    CollisionComponent* playerCC = mOwner->GetComponent<CollisionComponent>();
+    std::vector<Actor*>& blocks = mOwner->GetGame()->GetActBlocks();
+    
+    for(Actor* block : blocks) {
+        CollSide side = FixCollision(playerCC, block->GetComponent<CollisionComponent>());
+        if(side == CollSide::Bottom) {
+            mVelocity.z = 0.0f;
+        }
+        else if(side == CollSide::Front ||
+                side == CollSide::Back ||
+                side == CollSide::Right ||
+                side == CollSide::Left)
+        {
+            // Check if you can wall climb or wall run
+            if(CanWallClimb(side)) {
+                ChangeState(WallClimb);
+                mWallClimbTimer = 0.0f;
+            }
+            else if(CanWallRun(side)) {
+                ChangeState(WallRun);
+                mWallRunTimer = 0.0f;
+            }
+        }
+    }
+    if(mVelocity.z <= 0.0f) {
+        ChangeState(Falling);
+    }
+}
+
+bool PlayerMove::CanWallRun(CollSide side) {
+    Vector3 xyVelocity = Vector3(mVelocity.x, mVelocity.y, 0.0f);
+    Vector3 sideNormal = NormalConstruct(side);
+    
+    // Three conditions for the wall run. Can change the second condition to be more lenient if doing the wall runs is too difficult
+    if(Vector3::Dot(xyVelocity, mOwner->GetForward()) > FACING_CONDITION &&
+       Vector3::Dot(mOwner->GetForward(), sideNormal) < WALL_RUN_ANGLE &&
+       xyVelocity.Length() > WALL_RUN_CLIMB_MIN_VELOCITY)
+    {
+        mWallRunSide = side;
+        return true;
+    }
+    return false;
+}
+
+void PlayerMove::UpdateWallRun(float deltaTime) {
+    AddForce(mGravity);
+    mWallRunTimer += deltaTime;
+    
+    if(mWallRunTimer < MAX_WALL_RUN_TIME) {
+        AddForce(mWallRunForce);
+    }
+    
+    PhysicsUpdate(deltaTime);
+    
+    CollisionComponent* playerCC = mOwner->GetComponent<CollisionComponent>();
+    std::vector<Actor*>& blocks = mOwner->GetGame()->GetActBlocks();
+    bool falling = false;
+    
+    for(Actor* block : blocks) {
+        FixCollision(playerCC, block->GetComponent<CollisionComponent>());
+        // Stop the wall run when the player reaches the highest point in the climb
+        if(mVelocity.z <= 0.0f) {
+            falling = true;
+        }
+    }
+    
+    if(falling) {
+        mVelocity.z = 0.0f;
+        ChangeState(Falling);
+    }
+}
+
+Vector3 PlayerMove::NormalConstruct(CollSide side) {
+    // Construct the normal vector for the side being contacted by the player
+    if(side == CollSide::Front) {
+        return Vector3::UnitX;
+    }
+    else if(side == CollSide::Back) {
+        return Vector3::NegUnitX;
+    }
+    else if(side == CollSide::Right) {
+        return Vector3::UnitY;
+    }
+    else if(side == CollSide::Left) {
+        return Vector3::NegUnitY;
+    }
+    return Vector3::Zero;
 }
 ```
 
