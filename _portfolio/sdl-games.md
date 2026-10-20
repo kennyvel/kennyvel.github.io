@@ -19,23 +19,22 @@ gallery:
     alt: "PacMan"
 ---
 
-Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing the repository, feel free to reach out! You can find some snippets below as well.
+**Note:** Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing the code in full, feel free to reach out! You can find some links to playable WebAssembly builds as well as code snippets for these projects below.
+{: .notice--info} 
 
-Multiple games made using SDL and C++ with starter code provided for some from class. Over the course of the semester, games built off of code from games made previously. The games adapted as part of the class include: 
+The games coded in C++/SDL and built in WebAssembly as part of the class include: 
 - Pong
 - Asteroids
 - Frogger
 - Mario
-- Pac-Man
+- [Pac-Man]({{ '/pacman-build/' | relative_url }})
 - Zelda
 - Star Fox Tunnel
 - Mario Kart
 - Parkours’s Edge (a first person 3D platformer) 
 - Robotron 2084
 
-Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor.
-
-Below are some examples of code snippets I personally enjoyed coding the most:
+Taking ITP 380 at USC was my first exposure to programming for video games and helped me learn some of the basics for game programming, writing quality code, and some other mathematical applications. Throughout the labs, we focused on using a component model for things like movement, sprites, and collisions while also having the ability to override functions if need be in our game object class, Actor. Below are some examples of code snippets I personally enjoyed coding the most:
 
 ### PacMan Ghost Chase Behavior
 The isolated logic and video for the ghosts' chase state behaviors:
