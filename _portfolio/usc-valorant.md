@@ -21,7 +21,7 @@ gallery:
     alt: "Team page"
 ---
 
-This project was done as a final project for a web development class using HTML/CSS, Javascript, PHP, and MySQL. I wanted to create a website that could be used for archiving Valorant match results for the USC Valorant team that I was a part of at the time. Collegiate matches were usually not tracked outside of Valorant's in-game career page, unless they were high profile enough for the website, vlr. Even then, the in-game tracker cant display a full list of custom matches, only the most recent ones.
+This project was done as a final project for a web development class using HTML/CSS, Javascript, PHP, and MySQL. I wanted to create a website that could be used for archiving Valorant match results for the USC Valorant team that I was a part of at the time. Collegiate matches were usually not tracked outside of Valorant's in-game career page, unless they were high profile enough for the website, vlr.
 
 For this application, I implemented:
 - Home and Team pages for introducing the players on the team and purpose of the site
