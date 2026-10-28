@@ -22,6 +22,7 @@ gallery:
 **Note:** Currently, the GitHub repository is private so that students currently taking the course can't find it and copy from it. If you are interested in viewing the code in full, feel free to reach out! You can find some links to playable WebAssembly builds as well as code snippets for these projects below.
 {: .notice--info} 
 
+<!-- Add links for WebAssembly builds as you make them -->
 The games coded in C++/SDL and built in WebAssembly as part of the class include: 
 - Pong
 - Asteroids
@@ -127,7 +128,15 @@ PathNode* GhostAI::GetClosestDefaultNode(const Vector2& position) const
 ```
 {: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2kjYD2qDpVU?si=N89UqInP6cxTf5G8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/2kjYD2qDpVU?si=N89UqInP6cxTf5G8" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 
 ### Parkour's Edge Wall Running Logic
 The code and a video for switching to and updating the Wall Run state:
@@ -259,6 +268,15 @@ Vector3 PlayerMove::NormalConstruct(CollSide side) {
 ```
 {: style="max-height: 400px; overflow-y: auto; border: 1px solid #333; border-radius: 6px; margin-bottom: 24px;"}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wa_cFeEA6aE?si=eXi4OACC51kl8aMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/Wa_cFeEA6aE?si=eXi4OACC51kl8aMP" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
 
 {% include gallery %}
